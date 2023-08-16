@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SIGN UP</title>
-    <link rel="stylesheet" href="../style/index.css">
+    <link rel="stylesheet" href="../style/sign.css">
 </head>
 <body>
     <!-- header -->
@@ -26,5 +26,23 @@
             </div>
         </div>
     </header>
+    <div class="form">
+        <form id="form">
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="enter email" id="email" autocomplete="off">
+                <small id="useremail"></small>
+            </div>
+            <div class="form-control">
+                <label>Password</label>
+                <input type="password" placeholder="enter password" id="password" autocomplete="off">
+                <small id="userpassword"></small>
+            </div>
+            <div class="form-control">
+                <input type="submit" value="Submit">
+            </div>
+        </form>
+    </div>
 </body>
+<script src="../javascript/LOGIN.JS"></script>
 </html>

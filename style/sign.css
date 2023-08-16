@@ -56,6 +56,13 @@ ul,ol{
     padding: 20px 40px;
     border: 2px solid rgba(255, 255, 255, 0.449);
 }
+#form{
+    background: linear-gradient(90deg,rgba(0,212,255,0.35340073529411764) 0%,rgba(9, 9, 121, 0.212)  79%);
+    border-radius: 40px;
+    width: 350px;
+    padding: 20px 40px;
+    border: 2px solid rgba(255, 255, 255, 0.449);
+}
 .form-control{
     margin-bottom: 15px;
 }
