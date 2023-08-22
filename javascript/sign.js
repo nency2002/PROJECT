@@ -50,6 +50,7 @@ const userdata = (e) => {
                     },3000)
                 }
                 else {
+                localStorage.setItem("loggin",true)
                     fetch ("http://localhost:3000/user",{
                         method:"POST",
                         headers:{"content-type":"application/json"},

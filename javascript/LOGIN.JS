@@ -11,7 +11,11 @@ const login = (e) => {
     .then((data)=>{
         if(data.length > 0){
             if(data[0].password === password){
+                localStorage.setItem("loggin",true)
                 alert("login success")
+                setTimeout(() => {
+                    window.location.href = "/pages/pages.html"
+                },1000)
             }
             else{
                 alert("login invalid")

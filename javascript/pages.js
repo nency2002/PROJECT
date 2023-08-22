@@ -26,6 +26,23 @@ const display =(data) =>{
         }
         let btn = document.createElement('Button');
         btn.innerHTML="BUY NOW";
+        btn.addEventListener("click",()=>{
+            // console.log(products.id)
+            let loggin = localStorage.getItem("loggin")
+            if(loggin){
+                fetch ("http://localhost:3000/cart",{
+                        method:"POST",
+                        headers:{"content-type":"application/json"},
+                        body:JSON.stringify(products),
+                    });
+            }
+            else{
+                alert("you have to loggin first")
+                setTimeout(() => {
+                    window.location.href = "/pages/login.html"
+                },1000)
+            }
+        })
         let div = document.createElement('div');
         div.append(img,title,price,category,rating,btn)
         document.getElementById("box2").append(div)
